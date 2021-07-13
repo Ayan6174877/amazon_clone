@@ -1,3 +1,13 @@
+@ Amazon Clone
+### This app is built using React, Context API, material-UI and firebase for user authentication
+
+![amazon-2](https://user-images.githubusercontent.com/68985427/125514325-a6d34597-0302-45f4-aff1-6b75df934f97.PNG)
+
+![Amazon-1](https://user-images.githubusercontent.com/68985427/125514353-91710163-1c18-41b0-b46e-0abc4f25f251.PNG)
+
+![amazon-3](https://user-images.githubusercontent.com/68985427/125514360-3322a52f-06bc-4c93-bae5-93b8461342cb.PNG)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
