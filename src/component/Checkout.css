@@ -1,0 +1,22 @@
+.checkout_page {
+  padding: 20px;
+}
+
+.checkout {
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  margin-top: 10px;
+}
+
+.checkout__left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 15px;
+}
+
+.checkout__cartItemContainer {
+  padding: 20px;
+  background-color: white;
+}
