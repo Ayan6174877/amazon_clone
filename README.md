@@ -1,5 +1,5 @@
-@ Amazon Clone
-### This app is built using React, Context API, material-UI and firebase for user authentication
+# Amazon Clone
+#### This app is built using React, Context API, material-UI and firebase for user authentication
 
 ![amazon-2](https://user-images.githubusercontent.com/68985427/125514325-a6d34597-0302-45f4-aff1-6b75df934f97.PNG)
 
