@@ -2,6 +2,20 @@
   padding: 20px;
 }
 
+.empty__bakset {
+  display: flex;
+  padding: 30px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.empty__bakset svg {
+  width: 150px;
+  height: 150px;
+  fill: lightsalmon;
+  margin-right: 10px;
+}
+
 .checkout {
   display: flex;
   flex-direction: row;

@@ -1,37 +1,36 @@
-import React, { useEffect} from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Login from "./Login";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { auth } from '../firebase';
-import { useStateValue } from './StateProvider';
+import { auth } from "../firebase";
+import { useStateValue } from "./StateProvider";
+import AmazonBasics from "./AmazonBasics";
 
 function App() {
   const [{}, dispatch] = useStateValue();
 
   useEffect(() => {
     // will only load when componenet loads first
-    auth.onAuthStateChanged(authUser => {
+    auth.onAuthStateChanged((authUser) => {
       console.log("the user is >>>", authUser);
       if (authUser) {
-         // if the user is already lohhed in
+        // if the user is already lohhed in
         dispatch({
-          type: 'SET_USER',
-          user: authUser
-        })
-      }
-      else {
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
         // user is logged out
         dispatch({
-          type: 'SET_USER',
-          user: null
-        })
+          type: "SET_USER",
+          user: null,
+        });
       }
-     })
-  }, [])
-   
+    });
+  }, []);
 
   return (
     // react router is use to move from one page to another without refreshing the page
@@ -45,11 +44,15 @@ function App() {
             <Login />
           </Route>
           <Route path="/checkout">
-          <Header />
+            <Header />
             <Checkout />
           </Route>
+          <Route path="/product/amazonbasics">
+            <Header />
+            <AmazonBasics />
+          </Route>
           <Route path="/">
-          <Header />
+            <Header />
             <Home />
           </Route>
         </Switch>

@@ -1,41 +1,21 @@
 import React from "react";
 import "./Product.css";
-import { useStateValue } from "./StateProvider";
+import { Link } from "react-router-dom";
 
 function Product(props) {
-  const [{ basket }, dispatch] = useStateValue();
-  const addtoBasket = () => {
-    // dispatch the items into the data layer
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        id: props.id,
-        title: props.title,
-        image: props.image,
-        price: props.price,
-        rating: props.rating,
-      },
-    });
-  };
+  const items = Array.from(props.image);
 
   return (
     <div className="product">
-      <div className="product__info">
-        <p>{props.title}</p>
-        <p className="product_price">
-          <small>$</small>
-          <strong>{props.price}</strong>
-        </p>
-        <div className="product__rating">
-          {Array(props.rating)
-            .fill()
-            .map((_, i) => (
-              <p>⭐</p>
-            ))}
-        </div>
+      <p class="product__category">{props.category}</p>
+      <div className={props.itemCname}>
+        {items.map((images) => (
+          <img className="product__image" src={images} alt="product"></img>
+        ))}
       </div>
-      <img className="product__image" src={props.image} alt="product"></img>
-      <button onClick={addtoBasket}>Add to cart</button>
+      <Link to="/product/amazonbasics">
+        <p>See more</p>{" "}
+      </Link>
     </div>
   );
 }
