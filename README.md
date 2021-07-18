@@ -3,10 +3,11 @@
 
 ![amazon-2](https://user-images.githubusercontent.com/68985427/125514325-a6d34597-0302-45f4-aff1-6b75df934f97.PNG)
 
-![Amazon-1](https://user-images.githubusercontent.com/68985427/125514353-91710163-1c18-41b0-b46e-0abc4f25f251.PNG)
+![Amazon_1](https://user-images.githubusercontent.com/68985427/126081505-2eac3695-2715-4a66-886f-a9a6f23291d6.PNG)
 
-![amazon-3](https://user-images.githubusercontent.com/68985427/125514360-3322a52f-06bc-4c93-bae5-93b8461342cb.PNG)
+![Amazon_add](https://user-images.githubusercontent.com/68985427/126081509-8e47d76d-372e-47fc-9676-23073d9eca65.PNG)
 
+![amazon-3](https://user-images.githubusercontent.com/68985427/126081515-432df138-08e7-4f5b-bfed-c5c5be7e56b9.PNG)
 
 # Getting Started with Create React App
 
